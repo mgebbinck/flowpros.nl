@@ -98,8 +98,9 @@ section{padding:88px 0}
 
 /* footer */
 .site-footer{background:#0a252b;color:rgba(255,255,255,.72);padding:56px 0 28px;font-size:.92rem}
-.footer-grid{margin-bottom:36px;max-width:52ch}
-.site-footer img{height:34px;width:auto;margin-bottom:16px}
+.footer-merk{display:flex;align-items:center;gap:22px;margin-bottom:32px;flex-wrap:wrap}
+.footer-merk img{height:34px;width:auto;margin:0;flex-shrink:0}
+.footer-merk p{margin:0;line-height:1.4}
 .site-footer h4{color:#fff;font-size:.82rem;letter-spacing:.11em;text-transform:uppercase;margin-bottom:14px}
 .site-footer a{color:rgba(255,255,255,.72);display:block;margin-bottom:8px}
 .site-footer a:hover{color:#fff}
