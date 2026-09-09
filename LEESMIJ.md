@@ -19,6 +19,6 @@
 3. Zet **Enforce HTTPS** aan zodra het certificaat klaar is (duurt tot een uur).
 
 ## Nog te doen
-- Laat de privacyverklaring en de algemene voorwaarden nakijken door een jurist voordat je ze publiceert. Het zijn complete, op FlowPros toegesneden teksten, maar geen juridisch advies.
-- Controleer in de algemene voorwaarden de bedragen en termijnen (aansprakelijkheidsplafond, betalingstermijn, annuleringsregeling) en pas ze aan naar wat jij hanteert.
-- Artikel 10 verwijst naar een beroeps- of bedrijfsaansprakelijkheidsverzekering; controleer of dat klopt.
+- De algemene voorwaarden zijn de exacte tekst uit `Algemene Voorwaarden FlowPros - mei 2019.pdf` (23 artikelen, ongewijzigd overgenomen). Controleer of dit nog de actuele versie is.
+- De privacyverklaring is nieuw geschreven op basis van je bedrijfsgegevens. Laat die nakijken voordat je publiceert.
+- Artikel 18 van de voorwaarden verwees naar `flowpros.nl/privacybeleid/`; die link wijst nu naar `privacy.html`.

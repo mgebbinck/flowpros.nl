@@ -98,7 +98,7 @@ section{padding:88px 0}
 
 /* footer */
 .site-footer{background:#0a252b;color:rgba(255,255,255,.72);padding:56px 0 28px;font-size:.92rem}
-.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer-grid{margin-bottom:36px;max-width:52ch}
 .site-footer img{height:34px;width:auto;margin-bottom:16px}
 .site-footer h4{color:#fff;font-size:.82rem;letter-spacing:.11em;text-transform:uppercase;margin-bottom:14px}
 .site-footer a{color:rgba(255,255,255,.72);display:block;margin-bottom:8px}
@@ -122,7 +122,6 @@ section{padding:88px 0}
 @media(max-width:860px){
   .over{grid-template-columns:1fr;gap:32px}
   .over-foto{max-width:260px}
-  .footer-grid{grid-template-columns:1fr;gap:28px}
 }
 @media(max-width:760px){
   section{padding:60px 0}
@@ -154,3 +153,16 @@ section{padding:88px 0}
   font-size:.95rem;vertical-align:top;color:var(--grijs)}
 .juridisch th{background:var(--zand);color:var(--tekst);font-weight:700}
 .terug{display:inline-block;margin-bottom:26px;font-weight:600}
+
+/* cta-knoppen met icoon */
+.cta-knoppen{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.btn .ico{width:20px;height:20px;flex-shrink:0}
+.btn{display:inline-flex;align-items:center;gap:10px;justify-content:center}
+.btn-wa{background:#25D366;border-color:#25D366;color:#0a2e18}
+.btn-wa:hover{background:#1da851;border-color:#1da851;color:#fff}
+
+/* voorwaarden: genummerde leden en sub-a/b/c */
+.juridisch ol{counter-reset:none}
+.juridisch .intro{font-size:.92rem;padding:18px 20px;background:var(--zand);
+  border-radius:8px;margin-bottom:34px}
+.juridisch ol.abc{list-style:lower-alpha;margin:10px 0 0 1.2rem}
