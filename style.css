@@ -36,6 +36,8 @@ p{margin:0 0 1rem}
 .nav{display:flex;gap:28px;align-items:center}
 .nav a{color:var(--teal-dark);font-weight:600;font-size:.95rem}
 .nav a:hover{color:var(--rood);text-decoration:none}
+.nav a.btn{color:#fff}
+.nav a.btn:hover{color:#fff}
 .nav-toggle{display:none;background:none;border:0;cursor:pointer;padding:8px}
 .nav-toggle span{display:block;width:24px;height:2px;background:var(--teal-dark);margin:5px 0;transition:.25s}
 
@@ -80,7 +82,7 @@ section{padding:88px 0}
 
 /* over */
 .over{display:grid;grid-template-columns:320px 1fr;gap:56px;align-items:start}
-.over-foto img{border-radius:12px;width:100%;box-shadow:0 16px 40px rgba(20,71,83,.16)}
+.over-foto img{border-radius:12px;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 22%;box-shadow:0 16px 40px rgba(20,71,83,.16)}
 .over-tekst p{color:var(--grijs)}
 .over-tekst p strong{color:var(--tekst)}
 .feiten{display:flex;flex-wrap:wrap;gap:36px;margin:28px 0 8px;padding-top:24px;border-top:1px solid var(--rand)}
@@ -103,6 +105,19 @@ section{padding:88px 0}
 .site-footer a:hover{color:#fff}
 .footer-onder{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;
   display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.85rem}
+.footer-juridisch{display:flex;flex-wrap:wrap;gap:24px}
+.footer-juridisch a{display:inline;margin:0}
+
+/* contactgegevens */
+.contact-info{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px;
+  max-width:820px;margin:44px auto 0;padding-top:36px;border-top:1px solid rgba(255,255,255,.18);
+  text-align:left}
+.contact-info h4{color:#fff;font-size:.8rem;letter-spacing:.11em;text-transform:uppercase;margin-bottom:12px}
+.contact-info p{color:rgba(255,255,255,.85);margin:0 0 6px;font-size:.98rem;max-width:none}
+.contact-info a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.contact-info a:hover{color:#ff9d9d}
+.contact-info .rij{margin-bottom:6px;color:rgba(255,255,255,.85);font-size:.98rem}
+.contact-info .label{color:rgba(255,255,255,.6)}
 
 @media(max-width:860px){
   .over{grid-template-columns:1fr;gap:32px}
@@ -116,8 +131,26 @@ section{padding:88px 0}
     gap:0;background:#fff;border-bottom:1px solid var(--rand);padding:8px 24px 20px;display:none}
   .nav.open{display:flex}
   .nav a{padding:12px 0;border-bottom:1px solid var(--rand)}
-  .nav .btn{margin-top:14px;text-align:center;border-bottom:0}
+  .nav .btn{margin-top:14px;text-align:center;border-bottom:0;color:#fff}
   .hero{min-height:auto}
   .hero .wrap{padding-top:64px;padding-bottom:64px}
   .hero::after{background:linear-gradient(180deg,rgba(13,47,55,.92),rgba(20,71,83,.86))}
 }
+
+/* juridische pagina's */
+.pagina-kop{background:var(--teal-dark);color:#fff;padding:64px 0 44px}
+.pagina-kop h1{color:#fff;font-size:clamp(1.8rem,4vw,2.8rem)}
+.pagina-kop p{color:rgba(255,255,255,.8);margin:10px 0 0}
+.juridisch{padding:64px 0 88px}
+.juridisch .wrap{max-width:760px}
+.juridisch h2{font-size:1.35rem;margin:38px 0 12px}
+.juridisch h2:first-of-type{margin-top:0}
+.juridisch h3{font-size:1.05rem;margin:22px 0 8px}
+.juridisch p,.juridisch li{color:var(--grijs)}
+.juridisch ul,.juridisch ol{margin:0 0 1rem 1.2rem}
+.juridisch li{margin-bottom:7px}
+.juridisch table{width:100%;border-collapse:collapse;margin:0 0 1.2rem}
+.juridisch th,.juridisch td{border:1px solid var(--rand);padding:10px 12px;text-align:left;
+  font-size:.95rem;vertical-align:top;color:var(--grijs)}
+.juridisch th{background:var(--zand);color:var(--tekst);font-weight:700}
+.terug{display:inline-block;margin-bottom:26px;font-weight:600}
